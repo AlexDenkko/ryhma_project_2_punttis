@@ -24,7 +24,7 @@ body {
     position: absolute;
     font-size: 50px;
     top: -70px; 
-    animation: kakkasade 5s linear infinite;
+    animation: kakkasade 10s linear infinite;
   }
 
   @keyframes kakkasade {
@@ -32,7 +32,7 @@ body {
       transform: translateY(-100px);
     }
     100% {
-      transform: translateY(100vh); 
+      transform: translateY(220vh); 
     }
   }
 
@@ -113,7 +113,7 @@ body {
     color: #FF5100;
 }
 
-.tekstinönön {
+.landingPage_Upper_Content_Teksti {
     font-size: 1.2em;
     width: 85%;
 }
@@ -145,7 +145,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     text-align: center;
     width: 100%;
     height: auto;
@@ -161,17 +161,48 @@ body {
     width: 30%;
     height: auto;
     margin: 20px;
-    padding: 20px;
-    background-color: #0B0B0B;
+    _padding: 20px;
+    _background-color: #0B0B0B;
     border: 1px solid #FF5100;
-    border-radius: 2%;
+    _border-radius: 2%;
+    /*GLASSMORPHISM*/
+    background: rgba(60, 60, 60, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    _border: 1px solid rgba(170, 74, 0, 0.3);
+}
+
+.landingPage_Toimipiste_Kuva {
+    background: url(/Kuvat/pysty_liikuntasali.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.landingPage_Toimipiste_Teksti {
+    width: 100%;
+    padding: 0px 20px 20px;   
+}
+
+.landingPage_Toimipiste_Yhteystiedot {
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
 
-.landingPage_Toimipiste img {
+
+.landingPage_Toimipiste img { /*LOGO LAATIKON YLÄREUNASSA*/
     max-width: 70%;
     max-height: 20%;
     padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .landingPage_Toimipiste_Btn {
@@ -438,6 +469,17 @@ body {
     margin: 20px;
 }
 
+#stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    font-size: 2em;
+    height: auto;
+    margin: 20px;
+    color: #FF5100;
+}
 
 
 /*TOIMIPISTEET*/
