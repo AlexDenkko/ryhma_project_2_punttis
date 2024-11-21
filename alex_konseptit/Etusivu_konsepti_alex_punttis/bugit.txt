@@ -1,2 +1,0 @@
-- Jos klikkaa hampparimenuuta ja suurentaa resoluutiota tietokoneella. 
-  Ilmestyy 2 Tekstiä päälekkäin navissa.
