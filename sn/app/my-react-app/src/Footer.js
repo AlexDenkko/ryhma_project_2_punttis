@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from './paskapunttis_logo_white.png'; // Import the logo
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faLinkedin, faTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const FooterContainer = styled.div`
   background-color: #000000;
@@ -34,14 +36,13 @@ const FooterLogo = styled.img`
   order: 0;
 `;
 
-const SocialIcon = styled.i`
-  color: #F0F0F0;
-  margin: 8px 8px 40px 8px;
-  transition: all 0.3s ease 0s;
+const SocialIcon = styled(FontAwesomeIcon)`
+  color: white;
+  font-size: 36px;
+  transition: color 0.3s;
 
   &:hover {
     color: #FF5100;
-    text-align: center;
   }
 `;
 
@@ -111,19 +112,19 @@ const Footer = () => {
         <CenterContainer>
           <div>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon  style={{ fontSize: '36px' }}></SocialIcon>
+              <SocialIcon icon={faFacebook} className="social-icon" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon  style={{ fontSize: '36px' }}></SocialIcon>
+              <SocialIcon icon={faLinkedin} className="social-icon" />
             </a>
             <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon  style={{ fontSize: '36px' }}></SocialIcon>
+              <SocialIcon icon={faTwitter} className="social-icon" />
             </a>
             <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon  style={{ fontSize: '36px' }}></SocialIcon>
+              <SocialIcon icon={faYoutube} className="social-icon" />
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon  style={{ fontSize: '36px' }}></SocialIcon>
+              <SocialIcon icon={faInstagram} className="social-icon" />
             </a>
           </div>
           <br />
@@ -147,7 +148,7 @@ const Footer = () => {
         </CenterContainer>
         <BackToTop>
           <a href="#paska_header">
-            <i  style={{ fontSize: '36px' }}></i> Takaisin ylös
+            <i className="social-icon" style={{ fontSize: '36px' }}></i> Takaisin ylös
           </a>
         </BackToTop>
       </FooterInnerContainer>
