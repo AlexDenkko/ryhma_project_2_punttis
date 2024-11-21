@@ -31,7 +31,7 @@ body {
   
   .modalBtn:hover {
     background-color: #FF5100;
-    transform: scale(1.5); /*MITÄ VITTUA TÄÄLLÄ TAPAHTUU*/ 
+    transform: scale(1.1); /*MITÄ VITTUA TÄÄLLÄ TAPAHTUU*/ 
   }
 
 .paska_nav_links_hamburger {
@@ -108,6 +108,13 @@ body {
 }
 
 @media screen and (max-width: 900px) /* 25.10. nyt pienennetty sic. */ { 
+
+  #paska_header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
+
   .paska_nav_logo {
     height: 100px;
     width: auto;
