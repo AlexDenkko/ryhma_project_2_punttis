@@ -489,7 +489,7 @@ body {
 #modalHeader {
     width: 100%;
     height: 350px;
-    background: url(/Kuvat/vaaka_kättely.jpg);
+    background: url(./Kuvat/vaaka_kättely.jpg);
     background-size: cover;
     background-position: 60%;
     
@@ -539,7 +539,7 @@ body {
 
 #jasenyys {
     background-color: #0B0B0B;
-    background-image: url(/Kuvat/pysty_liikuntasali.jpg);
+    background-image: url(./Kuvat/pysty_liikuntasali.jpg);
     background-size: cover;
     color: #FFFFFF;
     width: 35%;
