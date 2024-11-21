@@ -2,7 +2,8 @@ KUINKA LISÄTÄ EERON SIISTIMÄT NAV JA FOOTER:
 
 1. LISÄÄ itsellesi Eeron KAKSI KANSIOTA itsellesi:
 - paskaNavScript.js
-- lo
+-lpScript.js
+- logo
 
             (   SITTEN:
 
@@ -12,6 +13,7 @@ Lisää index.html sivusi headeriin:
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <script src="./eeronNavFooter/ryhma_project_2_punttis-etusivu/paskaNavScript.js"></script>
+<script src="./eeronNavFooter/ryhma_project_2_punttis-etusivu/lpScript.js"></script>
 
 
 
