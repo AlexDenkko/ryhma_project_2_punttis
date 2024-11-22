@@ -107,6 +107,8 @@ body {
   background-color: #fff;
 }
 
+
+/* RESPONSIIVINEN VERSIO HEADER */
 @media screen and (max-width: 900px) /* 25.10. nyt pienennetty sic. */ { 
 
   #paska_header {
@@ -133,9 +135,9 @@ body {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .modalBtn {
-    display: none;
-  }
+  #paska_header .modalBtn { 
+    display: none; /* 22.11: Piilottaa napin #paska_headerista */
+}
 
   .paska_nav_links,
   .paska_nav_links_hamburger {
@@ -144,7 +146,7 @@ body {
     top: 120px;
     gap: 30px;
     flex-direction: column;
-    background-color: #000000a1;
+    background-color: #000000e6; /* 22.11: Muokattu läpinäkyvyyttä, nyt selkeämpi lukea. */
     width: 100%;
     text-align: center;
     margin: 16px 0;
@@ -339,6 +341,69 @@ body {
 }
 
 
+/* RESPONSIIVINEN VERSIO (HUOM! VAIN ETUSIVUN SISÄLTÖ, EI NAVI/FOOTER/MODALBOX) */
+
+@media screen and (max-width: 900px) {
+    #etusivu_first_container {
+        height: 500px;
+    }
+
+    #etusivu_first_container_content {
+        width: 100%;
+    }
+
+    #first_container_tekstit {
+        padding: 10% 10% 10%;
+    }
+
+    #etusivu_second_container {
+        flex-direction: column;
+        padding: 5% 0;
+    }
+
+    #etusivu_third_container {
+        flex-direction: column;
+    }
+
+    #etusivu_third_container_content {
+        width: 100%;
+    }
+
+    #third_container_tekstit {
+        padding: 10% 10% 10%;
+    }
+
+    #etusivu_fourth_container {
+        flex-direction: column;
+        padding: 5%;
+        
+    }
+
+    #asiakaskokemukset {
+        flex-direction: column;
+        padding: 5%;
+        align-items: center;
+    }
+
+    .asiakaskokemus {
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    #etusivu_fifth_container {
+        height: 900px;
+    }
+
+    #etusivu_fifth_container_content {
+        width: 100%;
+    }
+
+    #fifth_container_tekstit {
+        padding: 10% 10% 10%;
+    }
+}
+
 /* FOOTER ALKAA TÄSTÄ */
 
 #paska_footer {
@@ -435,6 +500,26 @@ body {
     
     
   
+}
+
+/* FOOTER RESPONSIIVINEN VERSIO (Lisätty 22.11) */
+
+@media screen and (max-width: 900px) {
+    #paska_footer_container {
+        flex-direction: column;
+    }
+
+    .paska_footer_logo {
+        order: 1;
+    }
+
+    .paska_footer_nav {
+        order: 0;
+    }
+
+    #paska_footer_center_container {
+        padding-top: 5%;
+    }
 }
 
 
@@ -623,8 +708,53 @@ body {
     cursor: pointer;
 }
 
+/* MODAL BOX RESPONSIIVINEN VERSIO */
 
-/*MODAL PÄÄTTYY*/
+@media screen and (max-width: 900px) {
+    .modalBoxContainer {
+        width: 100%;
+    }
+
+    .modalFlexBox {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .modalBoxContent {
+        padding: 10px;
+        width: 100%;
+    }
+
+    #modalHeader {
+        height: 200px;
+    }
+
+    #henkilotiedot {
+        width: 100%;
+    }
+
+    #jasenyys {
+        width: 100%;
+    }
+
+    .jasenyysItem {
+        align-items: center;
+    }
+
+    #jasenyys hr {
+        width: 100%;
+    }
+
+    #modal_Btns {
+        flex-direction: column;
+    }
+
+    #suljeIkkuna {
+        margin-top: 10px;
+    }
+}
+
+/* MODAL PÄÄTTYY */
 
 /*.paska_footer_logo,
 .paska_footer_nav {
