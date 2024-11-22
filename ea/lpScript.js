@@ -1,3 +1,5 @@
+// TÄÄ ON "LIITY JÄSENEKSI" - MODAL BOXIA / POPUPPIA VARTEN 
+
 let modal = document.getElementById("modalBox");
 let buttons = document.querySelectorAll(".modalBtn"); // Valitsee kaikki modalBtn-classit.
 
