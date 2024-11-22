@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  
+}
+
+html {
+  background-color: #000000;
+}   
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    text-transform: uppercase;
+}
+
+/* NAVIGAATIO / Header */
+
+.modalBtn {
+    padding: 9px 25px;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1); 
+  }
+  
+  .modalBtn:hover {
+    background-color: #FF5100;
+    transform: scale(1.5); /*MITÄ VITTUA TÄÄLLÄ TAPAHTUU*/ 
+  }
+
+.paska_nav_links_hamburger {
+  display: none;
+}
+
+#paska_header {
+  background-color: #000000;
+}
+
+#paska_header li,
+#paska_header a
+{
+ 
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+#paska_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.paska_nav_logo {
+  cursor: pointer;
+  height: 150px;
+  width: auto;
+}
+
+.paska_nav_links,
+.paska_nav_links_hamburger {
+  list-style: none;
+}
+
+.paska_nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.paska_nav_links_hamburger li a {
+  transition: all 0.3s ease 0s;
+}
+
+.paska_nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.paska_nav_links_hamburger li a:hover {
+  color: #FF5100;
+}
+
+.paska_nav_links li a:hover {
+  color: #FF5100;
+}
+
+.paska_hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.paska_bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 900px) /* 25.10. nyt pienennetty sic. */ { 
+  .paska_nav_logo {
+    height: 100px;
+    width: auto;
+  }
+  .paska_hamburger {
+    display: block;
+  }
+
+  .paska_hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .paska_hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .paska_hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .modalBtn {
+    display: none;
+  }
+
+  .paska_nav_links,
+  .paska_nav_links_hamburger {
+    position: fixed;
+    left: -100%;
+    top: 120px;
+    gap: 30px;
+    flex-direction: column;
+    background-color: #000000a1;
+    width: 100%;
+    text-align: center;
+    margin: 16px 0;
+  }
+
+  .paska_footer_logo {
+    padding:50px;
+  }
+  
+  
+}
+
+.paska_nav_links_hamburger.active {
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding-bottom: 25px;
+}
+
+
+/*SISÄLTÖ ETUSIVU*/
+
+.oranssi { /*HIGHLIGHT-VÄRI*/
+    color: #FF5100;
+}
+
+
+/*EKA CONTAINER*/
+#etusivu_first_container {
+    background-image: url(./Kuvat/vaaka_nyrkkisetä.jpg);
+    background-size: cover;
+    background-position: 10%;
+    width: 100%;
+    height: 600px;
+}
+
+#etusivu_first_container_content {
+    background-color: #000000d5;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+
+}
+
+#first_container_tekstit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F0F0F0;
+    padding: 20% 10% 10%;
+    width: 100%;
+    
+    
+}
+
+#stars {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
+    height: auto;
+    color: #FF5100;
+}
+
+.fa {
+    margin: 0px 5px 0px 5px;
+}
+
+/*TOKA CONTAINER*/
+#etusivu_second_container {
+    background-color: #000000;
+    color: #F0F0F0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+}
+
+/*KOLMAS CONTAINER*/
+#etusivu_third_container {
+    background-image: url(./Kuvat/vaaka_liikuntasali.jpg);
+    background-size: cover;
+    background-position: 10%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#etusivu_third_container_content {
+    
+    background-color: #000000d5;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+
+}
+
+#third_container_tekstit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F0F0F0;
+    padding: 10%;
+    width: 100%;
+    
+    
+}
+
+#third_container_tekstit img {
+    width: 50%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/*NELJÄS CONTAINER*/
+#etusivu_fourth_container {
+    background-color: #000000;
+    color: #F0F0F0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+}
+
+
+#asiakaskokemukset {
+    background-color: #000000;
+    color: #F0F0F0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: stretch;
+    padding: 5%;
+}     
+
+.asiakaskokemus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.5%;
+    width: 25%;
+    background-color: #F0F0F0;
+    color: #000000;
+    border-radius: 2%;
+    filter: drop-shadow(black 0.25rem 0.25rem 15px);
+}
+
+.asiakaskokemus img {
+    width: 50%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 50%;
+    
+}   
+
+
+/*VIIDES CONTAINER*/
+#etusivu_fifth_container {
+    background-image: url(./Kuvat/vaaka_punttisetä.jpg);
+    background-size: cover;
+    background-position: 10%;
+    width: 100%;
+    height: 600px;
+}
+
+#etusivu_fifth_container_content {
+    background-color: #000000d5;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+
+}
+
+#fifth_container_tekstit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F0F0F0;
+    padding: 10% 10% 10%;
+    width: 100%;
+    
+    
+}
+
+
+/* FOOTER ALKAA TÄSTÄ */
+
+#paska_footer {
+    background-color: #000000;
+    color: #F0F0F0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 24px
+    
+}
+
+#paska_footer_container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+#paska_footer_center_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.fab,
+.fas {
+    color: #F0F0F0;
+    margin: 8px 8px 40px 8px;
+    transition: all 0.3s ease 0s;
+}
+
+.fab:hover,
+.fas:hover {
+    color: #FF5100;
+    text-align: center;
+}
+
+.paska_footer_logo {
+    height: 100px;
+    order: 0;
+    
+}
+
+.paska_footer_nav {
+    margin-top: -40px;
+    order: 1;
+    
+}
+
+.paska_footer_nav ul {
+    list-style: none;
+}
+
+.paska_footer_nav a {
+    color: #FBF7F4;
+    text-decoration: none;
+    padding: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.paska_footer_nav a:hover {
+    color: #FF5100;
+    text-decoration: none;
+    padding: 20px
+}
+
+
+#paska_footer_center_container hr {
+    width: 100%; 
+    border: 0;
+    height: 1px;
+    background: #F0F0F0;
+    margin: 20px 0;
+}
+
+#paska_footer_ylos, 
+#paska_footer_ylos a {
+    color: #F0F0F0;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  
+}
+
+#paska_footer_ylos:hover, 
+#paska_footer_ylos a:hover {
+    color: #FF5100;
+    text-decoration: none;
+    
+    
+  
+}
+
+
+
+/*MODAL BOX ALKAA TÄSTÄ*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+.modalBoxContainer {
+    background-color: #FFFFFF;
+    color: #0B0B0B;
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    height: auto;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1s;
+    animation-name: animatetop;
+    animation-duration: 1s
+  }
+  
+ /* Animaatio */
+
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+.modalBoxContent {
+    padding: 20px;
+    width: 80%;
+}
+
+#modalHeader {
+    width: 100%;
+    height: 350px;
+    background: url(/Kuvat/vaaka_kättely.jpg);
+    background-size: cover;
+    background-position: 60%;
+    
+    
+}
+
+.close {
+    color: #F0F0F0;
+    _background-color: #FFFFFF;
+    text-align: end;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 5px 15px 5px 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: #FF5100;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+
+/* LOMAKE */
+
+.modalFlexBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#henkilotiedot {
+    width: 35%;
+}
+
+#henkilotiedot input {
+    background-color: #D9D9D9;
+    border: 0px;
+    width: 100%;
+}
+
+
+/*JÄSENYYDET*/
+
+#jasenyys {
+    background-color: #0B0B0B;
+    background-image: url(/Kuvat/pysty_liikuntasali.jpg);
+    background-size: cover;
+    color: #FFFFFF;
+    width: 35%;
+    border: 1px solid #FF5100;
+    border-radius: 2%;
+    filter: drop-shadow(black 0.25rem 0.25rem 15px);
+}
+
+#jasenyys .opacity {
+    width: 100%;
+    background-color: #0b0b0bd7;
+    border-radius: 2%;
+}
+
+#jasenyys hr { 
+    background-color: #FF5100;
+    border: none;
+    height: 1px;
+}
+
+.jasenyysItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.jasenyysItem input {
+    
+    margin-left: 5%;
+}
+
+.jasenyysItem label {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.jasenyysItem h4 {
+    color: #FF5100;
+    text-align: center;
+    padding-right: 10%;
+    margin-bottom: 5%;
+}
+
+#liityJaseneksi {
+    background-color: #FF5100;
+    opacity: 0.8;
+    font-weight: bolder;
+    border: 1px solid #0B0B0B;
+    padding: 10px;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+#liityJaseneksi:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#modal_Btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#suljeIkkuna {
+    background-color: #D9D9D9;
+    opacity: 0.8;
+    font-weight: bolder;
+    border: 1px solid #0B0B0B;
+    padding: 10px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+#suljeIkkuna:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/*MODAL PÄÄTTYY*/
+
+/*.paska_footer_logo,
+.paska_footer_nav {
+    display: inline-block;
+    vertical-align: middle;
+}
