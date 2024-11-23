@@ -433,3 +433,27 @@ padding-bottom: 25px;
 
 
                 !!SIINÄ KAIKKI!!
+
+
+                VAAN EIPÄS OLLUTKAAN, SANOO EERO:
+
+Footerin kanssa vähän mukavampi ja responsiivisempi tyylittely:
+
+@media screen and (max-width: 900px) {
+    #paska_footer_container {
+        flex-direction: column;
+    }
+
+    .paska_footer_logo {
+        order: 1;
+    }
+
+    .paska_footer_nav {
+        order: 0;
+    }
+
+    #paska_footer_center_container {
+        padding-top: 5%;
+    }
+}
+
