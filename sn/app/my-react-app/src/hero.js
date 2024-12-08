@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import image from './pexels-joshua-brown-173188224-13197535.jpg'
+import image from './pexels-ketut-subiyanto-4720266.jpg';
 
 const HeroSection = styled.section`
-  background-color: #222831;
+  background-color: #0b0b0b;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,9 +30,7 @@ const HeroText = styled.div`
   }
 `;
 const StyledImg = styled.img`
-  cursor: pointer;
   width: 400px;
-  transition: height 0.3s ease;
   `;
 
 const Hero = () => {
