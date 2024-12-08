@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import image from './pexels-joshua-brown-173188224-13197535.jpg'
 
 const HeroSection = styled.section`
   background-color: #222831;
-  background-size: cover;
-  background-position: center;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
   color: #fff;
   text-align: left;
   max-width: 100%;
-  flex: 1;
-  padding-bottom: 20px;
+  padding: 20px;
 `;
 
 const HeroText = styled.div`
@@ -31,16 +29,20 @@ const HeroText = styled.div`
     text-shadow: rgb(0, 0, 0) 1px 0 10px;
   }
 `;
+const StyledImg = styled.img`
+  cursor: pointer;
+  width: 400px;
+  transition: height 0.3s ease;
+  `;
 
 const Hero = () => {
   return (
     <HeroSection>
-    <div style={{ backgroundColor: '#222831', maxWidth: '100%'}}>
       <HeroText>
         <h1>Tervetuloa treenaamaan meidän punttisalille!<br /></h1>
         <p>Olemme täällä auttamassa sinua saavuttamaan tavoitteesi, olitpa sitten vasta-alkaja tai kokeneempi treenaaja. Ota yhteyttä, jos sinulla on kysyttävää jäsenyydestä, palveluistamme tai haluat varata ajan personal trainerille.</p>
       </HeroText>
-    </div>
+      <StyledImg src={image} />
     </HeroSection>
   );
 };
