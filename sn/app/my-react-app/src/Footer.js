@@ -12,7 +12,6 @@ const FooterContainer = styled.div`
   width: 100%;
   padding-top: 24px;
   padding-bottom: 24px; /* Ensure there is some padding at the bottom */
-  position: fixed; /* Ensure the footer is fixed at the bottom */
 `;
 
 const FooterInnerContainer = styled.div`
