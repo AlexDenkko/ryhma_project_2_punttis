@@ -121,8 +121,8 @@ const Header = () => {
       <nav>
         <NavLinks>
           <li><NavLink href="index.html">Etusivu</NavLink></li>
-          <li><NavLink href="#meista">Meistä</NavLink></li>
-          <li><NavLink href="#palvelut">Palvelut</NavLink></li>
+          <li><NavLink href="https://alexdenkko.github.io/ryhma_project_2_punttis/mh_aboutUs/mh_aboutUs_Oikea/index.html">Meistä</NavLink></li>
+          <li><NavLink href="https://alexdenkko.github.io/ryhma_project_2_punttis/mh_aboutUs/mh_aboutUs_Oikea/index.html">Palvelut</NavLink></li>
           <li><NavLink href="#yhteystiedot">Yhteystiedot</NavLink></li>
         </NavLinks>
       </nav>
