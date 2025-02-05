@@ -28,20 +28,20 @@
 <body>
     <!-- nav -->
     <div id="paska_header">
-        <img
-          class="paska_nav_logo" src="./Logot/PNG/paskapunttis_logo_white.png" alt="logo" style="width: 150px; height: auto;"/>
+        <a href="index.html"><img
+          class="paska_nav_logo" src="./Logot/PNG/paskapunttis_logo_white.png" alt="logo" style="width: 150px; height: auto;"/></a>
         <div id="paska_nav">
           <ul class="paska_nav_links">
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="#meista">Meistä</a></li>
-            <li><a href="#palvelut">Palvelut</a></li>
-            <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+            <li><a href="https://alexdenkko.github.io/ryhma_project_2_punttis/ea/index.html">Etusivu</a></li>
+            <li><a href="index.html">Meistä</a></li>
+            <li><a href="https://alexdenkko.github.io/ryhma_project_2_punttis/palvelut_sivu_paskapunttis/palvelut.html">Palvelut</a></li>
+            <li><a href="https://alexdenkko.github.io/ryhma_project_2_punttis/sn/yhteystiedot.html">Yhteystiedot</a></li>
           </ul>
           <ul class="paska_nav_links_hamburger">
             <li><a href="index.html">Etusivu</a></li>
-            <li><a href="#meista">Meistä</a></li>
-            <li><a href="#palvelut">Palvelut</a></li>
-            <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+            <li><a href="https://alexdenkko.github.io/ryhma_project_2_punttis/mh_aboutUs/mh_aboutUs_Oikea/index.html">Meistä</a></li>
+            <li><a href="https://alexdenkko.github.io/ryhma_project_2_punttis/palvelut_sivu_paskapunttis/palvelut.html">Palvelut</a></li>
+            <li><a href="https://alexdenkko.github.io/ryhma_project_2_punttis/sn/yhteystiedot.html">Yhteystiedot</a></li>
           </ul>
         </div>
         <div class="paska_hamburger">
@@ -49,8 +49,8 @@
           <span class="paska_bar"></span>
           <span class="paska_bar"></span>
         </div>
-        <button class="modalBtn" data-aos="fade-up" data-aos-duration="3000">LIITY JÄSENEKSI!</button>
-    </div>    
+        <button class="modalBtn"><a href="https://alexdenkko.github.io/ryhma_project_2_punttis/ea/index.html">LIITY JÄSENEKSI!</a></button>
+    </div>
     <!-- nav loppu -->
 
 
@@ -182,10 +182,12 @@
             <p class="line2" style="color: rgb(255, 64, 0);">KANTAJÄSENEKSI</p>
             <p class="line3">SAAT PARHAAT <span style="color: rgb(255, 64, 0);">ALENNUKSET</span> JA <span style="color: rgb(255, 64, 0);">TAPAHTUMAKUTSUT</span> ENNEN MUITA!</p>
             <div class="join-us-form">
-                <input type="email" placeholder="Lisää sähköpostisi...">
-                <button>LIITY!</button>
+                <form action="https://formsubmit.co/sinun.email@esimerkki.com" method="POST">
+                    <input type="email" name="email" placeholder="Lisää sähköpostisi..." required>
+                    <input type="hidden" name="_subject" value="Uusi PaskaPunttaaja!">
+                    <button type="submit">LIITY!</button>
+                </form>
             </div>
-        </div>
     </div>
 </section>
 
@@ -238,13 +240,13 @@ alt="Footerin Paska Punttis-logo" style="width: 250px; height: auto;"
 <div class="paska_footer_nav">
 <ul>
 <li>
-<a href="#">Etusivu</a>
-<a href="tietoa.html">Meistä</a>
-<a href="majoitus.html">Palvelut</a>
-<a href="yhteystiedot.html">Yhteystiedot</a>
+    <a href="https://alexdenkko.github.io/ryhma_project_2_punttis/mh_aboutUs/mh_aboutUs_Oikea/index.html">Meistä</a>
+    <a href="https://alexdenkko.github.io/ryhma_project_2_punttis/palvelut_sivu_paskapunttis/palvelut.html">Palvelut</a>
+    <a href="https://alexdenkko.github.io/ryhma_project_2_punttis/sn/yhteystiedot.html">Yhteystiedot</a>
 </li>
 </ul>
 </div>
+
 
 <!--FOOTERIN YHTEYSTIEDOT-->
 <hr class="paska_footer_hr" />
@@ -266,7 +268,7 @@ Valimotie 8, 00380 Helsinki
 </div> <!--FOOTER PÄÄTTYY TÄHÄN-->
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="paskaNavScript.js"></script>
 
@@ -281,28 +283,5 @@ AOS.init();
 <!--EERON FOOTER PÄÄTTYY TÄHÄN-->
 
 
-
-
-
-
-    <!-- Footer 
-    <footer>
-        <div class="footer">
-            <div class="row">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-            </div>
-            <div class="row">
-                <ul>
-                    <li><a href="#">Etusivu</a></li>
-                    <li><a href="#">Meistä</a></li>
-                    <li><a href="#">Palvelut</a></li>
-                    <li><a href="#">Yhteystiedot</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>-->
 </body>
 </html>
