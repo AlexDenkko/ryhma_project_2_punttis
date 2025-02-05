@@ -530,6 +530,7 @@ img .karuselli {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  flex-direction: column;
 }
 
 .join-us-form input[type="email"] {
