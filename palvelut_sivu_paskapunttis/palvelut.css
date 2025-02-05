@@ -1,6 +1,7 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap");
 
-/* Yleinen tyyli */
+/* General styles */
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +19,8 @@ a {
   color: #fff;
 }
 
-/* Navigaatio */
-/* TÄSTÄ ALKAA HEADER */
+/* Navigation styles */
+/* Header styles */
 .modalBtn {
   padding: 9px 25px;
   background-color: #ff5100;
@@ -166,9 +167,7 @@ a {
   padding-bottom: 25px;
 }
 
-/* TÄHÄN LOPPUU HEADER */
-
-/* TÄSTÄ ALKAA FOOTER */
+/* Footer styles */
 #paska_footer {
   background-color: #000000;
   color: #f0f0f0;
@@ -254,9 +253,8 @@ a {
   color: #ff5100;
   text-decoration: none;
 }
-/* TÄHÄN LOPPUU FOOTER */
 
-/* Jenni Jenninen */
+/* Jenni Jenninen section */
 .container {
   display: flex;
   max-width: 1000px;
@@ -317,7 +315,7 @@ a {
   font-size: 18px;
 }
 
-/* Palvelut */
+/* Services section */
 .services {
   padding: 60px 20px;
   text-align: center;
@@ -351,7 +349,7 @@ a {
   margin-bottom: 10px;
 }
 
-/* Meistä */
+/* About us section */
 .myyntipuheteksti {
   padding: 60px 20px;
   text-align: center;
@@ -370,7 +368,7 @@ a {
   margin-bottom: 20px;
 }
 
-/* Ota yhteyttä */
+/* Contact section */
 .contact {
   padding: 60px 20px;
   background-color: #000000;
@@ -427,3 +425,4 @@ a {
 }
 
 /* Footer */
+/*Have nice day! :)*/
