@@ -5,25 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kuntosali - Tervetuloa</title>
-    <link rel="stylesheet" href="app/css/yhteystiedot.css">
+    <link rel="stylesheet" href="./scriptit/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./eeronNavFooter/ryhma_project_2_punttis-etusivu/paskaNavScript.js"></script>
+    <script src="./eeronNavFooter/ryhma_project_2_punttis-etusivu/lpScript.js"></script>
+
 </head>
 <body>
     <!-- Navigaatio -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="../alex_konseptit/landing_page/landing.html">
-                    <img src="../alex_konseptit/landing_page/kuvat/paskapunttis_logo_white.png" alt="logo">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#services">Palvelut</a></li>
-                <li><a href="#about">Meistä</a></li>
-                <li><a href="yhteystiedot.html">Ota yhteyttä</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="paska_header">
+        <img
+          class="paska_nav_logo" src="/sn/scriptit/Kuvat/paskapunttis_logo_white.png" alt="logo" style="width: 150px; height: auto;"/>
+        <div id="paska_nav">
+          <ul class="paska_nav_links">
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="#meista">Meistä</a></li>
+            <li><a href="#palvelut">Palvelut</a></li>
+            <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+          </ul>
+          <ul class="paska_nav_links_hamburger">
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="#meista">Meistä</a></li>
+            <li><a href="#palvelut">Palvelut</a></li>
+            <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+          </ul>
+        </div>
+        <div class="paska_hamburger">
+          <span class="paska_bar"></span>
+          <span class="paska_bar"></span>
+          <span class="paska_bar"></span>
+        </div>
+        <button class="modalBtn" data-aos="fade-up" data-aos-duration="3000">LIITY JÄSENEKSI!</button>
+    </div>
+
 
     <!-- hero-sektio -->
     <section class="hero">
@@ -93,8 +108,62 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 PASKA PUNTTIS.</p>
-    </footer>
+    <div id="paska_footer">
+        <!--FOOTERIN CONTAINER-->
+<div id="paska_footer_container">
+
+<!--FOOTERIN LOGO-->
+<img
+class="paska_footer_logo"
+src="./scriptit/Kuvat/paskapunttis_logo_white.png"
+alt="Footerin Paska Punttis-logo"
+/>
+        <!--FOOTERIN CENTER CONTAINER-->
+<div id="paska_footer_center_container">
+
+<!--SOMEIKONIT-->
+<div class="paska_footer_someikonit">
+<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" style="font-size: 36px"></i></a>
+<a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin" style="font-size: 36px"></i></a>
+<a href="https://www.x.com" target="_blank"><i class="fab fa-twitter" style="font-size: 36px"></i></a>
+<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" style="font-size: 36px"></i></a>
+<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" style="font-size: 36px"></i></a>
+</div>
+
+<br />
+
+
+
+<!--FOOTERIN NAVI-->
+<center>
+<div class="paska_footer_nav">
+<ul>
+<li>
+<a href="index.html">Etusivu</a>
+<a href="https://alexdenkko.github.io/ryhma_project_2_punttis/mh_aboutUs/mh_aboutUs_Oikea/index.html">Meistä</a>
+<a href="https://alexdenkko.github.io/ryhma_project_2_punttis/palvelut_sivu_paskapunttis/palvelut.html">Palvelut</a>
+<a href="https://alexdenkko.github.io/ryhma_project_2_punttis/sn/yhteystiedot.html">Yhteystiedot</a>
+</li>
+</ul>
+</div>
+
+<!--FOOTERIN YHTEYSTIEDOT-->
+<hr class="paska_footer_hr" />
+<div class="paska_footer_yhteystiedot">
+Valimotie 8, 00380 Helsinki
+<br>
+&copy; 2024 Paska Punttis
+<br><br>
+</div>
+</center>
+
+</div> <!--CENTER CONTAINER PÄÄTTYY-->
+
+<div id="paska_footer_ylos">
+<a href="#paska_header"><i class="fas fa-arrow-up" style="font-size: 36px;"></i> Takaisin ylös</a>
+</div>
+
+</div> <!--CONTAINER PÄÄTTYY-->
+</div> <!--FOOTER PÄÄTTYY TÄHÄN-->
 </body>
 </html>
