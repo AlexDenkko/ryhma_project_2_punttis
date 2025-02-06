@@ -5,12 +5,12 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  
+
 }
 
 html {
   background-color: #000000;
-}   
+}
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
@@ -26,12 +26,12 @@ body {
     border-radius: 2.5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    transform: scale(1); 
+    transform: scale(1);
   }
-  
+
   .modalBtn:hover {
     background-color: #FF5100;
-    transform: scale(1.5); /*MITÄ VITTUA TÄÄLLÄ TAPAHTUU*/ 
+    transform: scale(1.5); /*MITÄ VITTUA TÄÄLLÄ TAPAHTUU*/
   }
 
 .paska_nav_links_hamburger {
@@ -45,7 +45,7 @@ body {
 #paska_header li,
 #paska_header a
 {
- 
+
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -107,7 +107,7 @@ body {
   background-color: #fff;
 }
 
-@media screen and (max-width: 900px) /* 25.10. nyt pienennetty sic. */ { 
+@media screen and (max-width: 900px) /* 25.10. nyt pienennetty sic. */ {
   .paska_nav_logo {
     height: 100px;
     width: auto;
@@ -146,8 +146,8 @@ body {
   .paska_footer_logo {
     padding:50px;
   }
-  
-  
+
+
 }
 
 .paska_nav_links_hamburger.active {
@@ -166,6 +166,138 @@ body {
     color: #FF5100;
 }
 
+.hero {
+  background: var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+  height: var(--hero-height);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  text-align: left;
+  padding-left: var(--hero-padding-left);
+  margin-bottom: 20px; /* Optional: Add some space between hero sections */
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: var(--hero-text-h1-font-size);
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  max-width: 50%;
+  display: flex;
+}
+
+.hero-text p {
+  font-size: var(--hero-text-p-font-size);
+  max-width: 50%;
+  margin-bottom: 20px;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  display: flex;
+}
+
+.hero-image {
+  width: 33.33%;
+  margin-right: 20px; /* Optional: Add some space between the image and the text */
+}
+
+.hero-image-right {
+  width: 33.33%;
+  margin-left: 20px; /* Optional: Add some space between the text and the image */
+}
+
+.hero-content {
+  max-width: 66.67%;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: #D65A31;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn:hover {
+  background-color: #a14729;
+}
+
+/* Palvelut */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #EEEEEE;
+}
+
+.services h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+/* Ota yhteyttä */
+.contact {
+  padding: 60px 20px;
+  background-color: #EEEEEE;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px 25px;
+  background-color: #D65A31;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.contact button:hover {
+  background-color: #a14729;
+}
 
 /*EKA CONTAINER*/
 #etusivu_first_container {
@@ -191,8 +323,8 @@ body {
     color: #F0F0F0;
     padding: 20% 10% 10%;
     width: 100%;
-    
-    
+
+
 }
 
 #stars {
@@ -232,7 +364,7 @@ body {
 }
 
 #etusivu_third_container_content {
-    
+
     background-color: #000000d5;
     width: 50%;
     height: 100%;
@@ -247,8 +379,8 @@ body {
     color: #F0F0F0;
     padding: 10%;
     width: 100%;
-    
-    
+
+
 }
 
 #third_container_tekstit img {
@@ -279,7 +411,7 @@ body {
     text-align: center;
     align-items: stretch;
     padding: 5%;
-}     
+}
 
 .asiakaskokemus {
     display: flex;
@@ -299,8 +431,8 @@ body {
     height: auto;
     margin: 20px 0;
     border-radius: 50%;
-    
-}   
+
+}
 
 
 /*VIIDES CONTAINER*/
@@ -327,8 +459,8 @@ body {
     color: #F0F0F0;
     padding: 10% 10% 10%;
     width: 100%;
-    
-    
+
+
 }
 
 
@@ -341,7 +473,7 @@ body {
     bottom: 0;
     width: 100%;
     padding-top: 24px
-    
+
 }
 
 #paska_footer_container {
@@ -378,13 +510,13 @@ body {
 .paska_footer_logo {
     height: 100px;
     order: 0;
-    
+
 }
 
 .paska_footer_nav {
     margin-top: -40px;
     order: 1;
-    
+
 }
 
 .paska_footer_nav ul {
@@ -406,28 +538,28 @@ body {
 
 
 #paska_footer_center_container hr {
-    width: 100%; 
+    width: 100%;
     border: 0;
     height: 1px;
     background: #F0F0F0;
     margin: 20px 0;
 }
 
-#paska_footer_ylos, 
+#paska_footer_ylos,
 #paska_footer_ylos a {
     color: #F0F0F0;
     text-decoration: none;
     transition: all 0.3s ease 0s;
-  
+
 }
 
-#paska_footer_ylos:hover, 
+#paska_footer_ylos:hover,
 #paska_footer_ylos a:hover {
     color: #FF5100;
     text-decoration: none;
-    
-    
-  
+
+
+
 }
 
 
@@ -446,7 +578,7 @@ body {
     height: 100%;
     overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.4);
-    
+
 }
 
 .modalBoxContainer {
@@ -461,14 +593,14 @@ body {
     animation-name: animatetop;
     animation-duration: 1s
   }
-  
+
  /* Animaatio */
 
   @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
+    from {top:-300px; opacity:0}
     to {top:0; opacity:1}
   }
-  
+
   @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
@@ -485,8 +617,8 @@ body {
     background: url(/Kuvat/vaaka_kättely.jpg);
     background-size: cover;
     background-position: 60%;
-    
-    
+
+
 }
 
 .close {
@@ -547,7 +679,7 @@ body {
     border-radius: 2%;
 }
 
-#jasenyys hr { 
+#jasenyys hr {
     background-color: #FF5100;
     border: none;
     height: 1px;
@@ -562,7 +694,7 @@ body {
 }
 
 .jasenyysItem input {
-    
+
     margin-left: 5%;
 }
 
